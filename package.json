@@ -10,6 +10,10 @@
     },
     "dependencies": {
         "@netlify/blobs": "^8.2.0",
+        "@notionhq/client": "^4.0.1",
+        "openai": "^5.9.0",
+        "@octokit/rest": "^22.0.0",
+        "jsonwebtoken": "^9.0.0",
         "blobshape": "^1.0.0",
         "bright": "^0.8.5",
         "markdown-to-jsx": "^7.4.5",

@@ -1,0 +1,43 @@
+
+> next-netlify-platform-starter@0.1.0 build
+> next build
+
+   ▲ Next.js 15.3.5
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 6.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/14) ...
+   Generating static pages (3/14) 
+   Generating static pages (6/14) 
+   Generating static pages (10/14) 
+ ✓ Generating static pages (14/14)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS  Revalidate  Expire
+┌ ○ /                                      496 B         105 kB
+├ ○ /_not-found                            977 B         102 kB
+├ ○ /admin                               7.82 kB         109 kB
+├ ○ /admin/login                           591 B         102 kB
+├ ○ /blobs                               2.68 kB         111 kB
+├ ○ /classics                            1.33 kB         102 kB
+├ ○ /edge                                  147 B         101 kB
+├ ○ /edge/australia                        147 B         101 kB
+├ ○ /edge/not-australia                    147 B         101 kB
+├ ○ /image-cdn                             854 B         114 kB
+├ ● /posts/[slug]                          147 B         101 kB
+├   └ /posts/hello-world
+├ ƒ /quotes/random                         147 B         101 kB
+└ ○ /revalidation                          322 B         101 kB          1m      1y
++ First Load JS shared by all             101 kB
+  ├ chunks/4bd1b696-10e7a50ac5c97126.js  53.2 kB
+  ├ chunks/684-6a6e50989bd4ef89.js       45.9 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
