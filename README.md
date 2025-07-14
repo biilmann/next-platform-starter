@@ -39,3 +39,19 @@ netlify dev
 ```
 
 If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+
+## Notion Publishing Feature
+
+This site includes an admin interface and backend functions to publish blog posts directly from Notion.
+
+### Setup
+
+1. Create a GitHub OAuth App and set its **Authorization callback URL** to `https://<your-site>.netlify.app/api/auth/callback`.
+2. In your Netlify dashboard, add the following environment variables:
+   - `NOTION_API_KEY`
+   - `OPENAI_API_KEY`
+   - `GITHUB_CLIENT_ID`
+   - `GITHUB_CLIENT_SECRET`
+   - `JWT_SECRET`
+3. Update `netlify/lib/config.mts` with your GitHub repository details (owner, repo, authorizedUsers).
+4. Deploy or run locally with `netlify dev`, then visit `/admin` to authenticate and access the admin interface.
